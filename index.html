@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Slide Transitions</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h3 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h3 {
+				color: #222;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section data-transition="convex">
+					<div><img style="border:none;box-shadow:none;" src="electron-logo.svg"></div>
+				</section>
+
+				<section data-transition="convex">
+					<h2>Jean-Denis Caron</h2>
+                    <h3>jean-denis.caron@frimastudio.com</h3>
+					<h3>facebook.com/jeandenis</h3>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Concepts</h3>
+					<div>Contrôle de l'affichage des fenêtres / menus.</div>
+					<br/>
+					<div>Isolation de l'environnement: cookies, window.localStorage, dossier de l'application (AppData/.folder).</div>
+					<br/>
+					<div>Accès aux ressources du système (IO, Networking, Run, API).</div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Expliquation simplifié</h3>
+					<div>Node.js qui rencontre Chrome personnalisable / emballable.</div>
+				</section>
+
+				<section data-transition="convex">
+					<section id="fragments">
+						<h3>Histoire récente</h3>
+						<p>Mozilla Prism / Chromeless (2007)</p>
+						<p class="fragment">Node.js (2009)</p>
+						<p><span class="fragment">2011</span><span class="fragment">, RIP Mozilla Prism</span></p>
+					</section>
+				</section>
+
+				<section data-transition="convex">
+					<div><img style="border:none;box-shadow:none;" src="node.png"></div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Avantages</h3>
+					<div>Rapidité de développement pour ceux qui sont familimiers avec JavaScript et HTML/CSS.</div>
+					<br/>
+					<div>Compatibilité avec les modules Node.js et toutes les librairies JavaScript.</div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Avantages</h3>
+					<div>Multiplateforme; Chromium/Electron est rapide et robuste sur ces 3 plateformes: Mac OS, Linux, Windows.</div>
+					<br/>
+					<div>Intégration facile et sécuritaire de contenu externe via l'élément &lt;webview&gt;.</div>
+					<br/>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Possibilitées</h3>
+					<div>Compiler des modules natifs avec emscripten, mais aussi possible d'inclure des modules compilés et spécifiques à chaques plateformes.</div>
+					<br/>
+					<div>Application portable sans trop de réingénérie vers PhoneGap / Cordova.</div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Similaire à</h3>
+					<div>Node WebKit / NW.js, mais différent au niveau de la gestion des fenêtres et de l'intégration avec Node.js.</div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Applications Electron</h3>
+					<div>Atom</div>
+					<div>Slack</div>
+					<div>Visual Studio Code</div>
+					<br/>
+					<h3>Applications NW.js</h3>
+					<div>Intel XDK</div>
+					<div>Popcorn Time</div>
+					<div>WhatsApp</div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Futur?</h3>
+					<div>Chrome OS</div>
+					<div>Mozilla browser.html</div>
+                </section>
+
+				<section data-transition="convex">
+					<h3>Enfin du code</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				center: true,
+				history: true,
+
+				// transition: 'slide',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+
+		</script>
+
+	</body>
+</html>
